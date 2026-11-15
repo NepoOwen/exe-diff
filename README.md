@@ -1,4 +1,4 @@
-# exediff
+# exe-diff
 
 Compares two builds of a Windows executable or DLL and reports which functions were **added**, **removed** or **changed**, with GitHub-style diffs of the decompiled C and of the assembly.
 
