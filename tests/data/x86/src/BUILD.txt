@@ -1,0 +1,18 @@
+Run from tests\data\x86\src in a "vcvars32.bat" (x86 target) prompt. Outputs go one folder up.
+Expected differences old -> new: changed fn_05 and run; added extra_first and added_fn; removed removed_fn; everything else only moves.
+exediff pairs removed_fn with extra_first (the similarity pass: both store a global and return arithmetic), so its report says 3 changed, 1 added (added_fn), 0 removed.
+
+set CL=/nologo /O2 /Ob0 /GS- /Gy /MT /Zl
+set LK=/nologo /NODEFAULTLIB kernel32.lib user32.lib /OPT:REF /OPT:NOICF /INCREMENTAL:NO /BASE:0x400000
+
+cl /Fo:old.obj /c old.c
+cl /Fo:new.obj /c new.c
+link %LK% /SUBSYSTEM:CONSOLE /ENTRY:start /DYNAMICBASE /OUT:..\old.exe old.obj
+link %LK% /SUBSYSTEM:CONSOLE /ENTRY:start /DYNAMICBASE /OUT:..\new.exe new.obj
+link %LK% /SUBSYSTEM:CONSOLE /ENTRY:start /FIXED /DYNAMICBASE:NO /OUT:..\old_fixed.exe old.obj
+link %LK% /SUBSYSTEM:CONSOLE /ENTRY:start /FIXED /DYNAMICBASE:NO /OUT:..\new_fixed.exe new.obj
+
+cl /DBUILD_DLL /Fo:old_dll.obj /c old.c
+cl /DBUILD_DLL /Fo:new_dll.obj /c new.c
+link %LK% /DLL /ENTRY:DllMain /DYNAMICBASE /OUT:..\old.dll old_dll.obj
+link %LK% /DLL /ENTRY:DllMain /DYNAMICBASE /OUT:..\new.dll new_dll.obj
