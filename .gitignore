@@ -1,0 +1,40 @@
+# build output
+build/
+x64/
+.vs/
+*.user
+*.obj
+*.pdb
+*.ilk
+
+# python environment for scratch scripts
+.venv/
+__pycache__/
+
+# local run folder and run output
+release/
+out/
+work/
+exediff.ini
+scripts/update-signatures/input/*
+!scripts/update-signatures/input/.gitkeep
+scripts/update-signatures/output/
+scripts/port-ida-database/output/
+
+# executables (the exes being compared are inputs, not source) and IDA databases
+*.exe
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.$$$
+
+# agent working state
+.superpowers/
+
+# local agent instructions and planning notes (not part of the project)
+CLAUDE.md
+docs/superpowers/
+!tests/data/x86/*.exe
