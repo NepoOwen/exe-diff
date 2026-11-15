@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{6C1F3A52-2D0B-4C8E-9B61-1E7A5D3F0A01}</ProjectGuid>
+    <RootNamespace>exediff_core</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\common.props" />
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\config\settings.cpp" />
+    <ClCompile Include="..\src\console\console.cpp" />
+    <ClCompile Include="..\src\ida\install.cpp" />
+    <ClCompile Include="..\src\ida\process.cpp" />
+    <ClCompile Include="..\src\ida\step.cpp" />
+    <ClCompile Include="..\src\diff\normalize_c.cpp" />
+    <ClCompile Include="..\src\ida\exchange.cpp" />
+    <ClCompile Include="..\src\sig\scan.cpp" />
+    <ClCompile Include="..\src\report\html.cpp" />
+    <ClCompile Include="..\src\report\markdown.cpp" />
+    <ClCompile Include="..\src\report\notes.cpp" />
+    <ClCompile Include="..\src\report\pair.cpp" />
+    <ClCompile Include="..\src\util\md5.cpp" />
+    <ClCompile Include="..\src\diff\lines.cpp" />
+    <ClCompile Include="..\src\text\render.cpp" />
+    <ClCompile Include="..\src\match\match.cpp" />
+    <ClCompile Include="..\src\func\discover.cpp" />
+    <ClCompile Include="..\src\func\seeds.cpp" />
+    <ClCompile Include="..\src\disasm\decode.cpp" />
+    <ClCompile Include="..\src\pe\image.cpp" />
+    <ClCompile Include="..\external\zydis\Zydis.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(ExeDiffRoot)external\zydis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\config\settings.hpp" />
+    <ClInclude Include="..\src\console\console.hpp" />
+    <ClInclude Include="..\src\ida\install.hpp" />
+    <ClInclude Include="..\src\ida\process.hpp" />
+    <ClInclude Include="..\src\ida\step.hpp" />
+    <ClInclude Include="..\src\diff\normalize_c.hpp" />
+    <ClInclude Include="..\src\ida\exchange.hpp" />
+    <ClInclude Include="..\src\sig\scan.hpp" />
+    <ClInclude Include="..\src\util\wide.hpp" />
+    <ClInclude Include="..\src\report\html.hpp" />
+    <ClInclude Include="..\src\report\markdown.hpp" />
+    <ClInclude Include="..\src\report\notes.hpp" />
+    <ClInclude Include="..\src\report\pair.hpp" />
+    <ClInclude Include="..\src\util\md5.hpp" />
+    <ClInclude Include="..\src\diff\lines.hpp" />
+    <ClInclude Include="..\src\text\render.hpp" />
+    <ClInclude Include="..\src\match\match.hpp" />
+    <ClInclude Include="..\src\func\discover.hpp" />
+    <ClInclude Include="..\src\func\seeds.hpp" />
+    <ClInclude Include="..\src\disasm\decode.hpp" />
+    <ClInclude Include="..\src\util\hash.hpp" />
+    <ClInclude Include="..\src\pe\image.hpp" />
+    <ClInclude Include="..\external\zydis\Zydis.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
