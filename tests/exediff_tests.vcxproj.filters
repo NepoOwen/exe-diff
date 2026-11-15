@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tests">
+      <UniqueIdentifier>{A0E1B2C3-0003-4000-8000-000000000001}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_match.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_func.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_func_x86.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_disasm.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_pe.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_zydis.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pe_builder.hpp">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="test.hpp">
+      <Filter>tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+<ItemGroup>
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_diff.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_text.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_text_x86.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_notes.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test_config.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_install.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_normalize_c.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_exchange.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_sig.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_markdown.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_report.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  </Project>
