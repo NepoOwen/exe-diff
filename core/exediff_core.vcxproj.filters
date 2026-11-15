@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src\ida">
+      <UniqueIdentifier>{CA9ADFCD-0E42-4129-B9C8-70335041A07A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\config">
+      <UniqueIdentifier>{A0E1B2C3-0001-4000-8000-000000000004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\console">
+      <UniqueIdentifier>{A0E1B2C3-0001-4000-8000-000000000005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\config">
+      <UniqueIdentifier>{A0E1B2C3-0001-4000-8000-000000000004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\console">
+      <UniqueIdentifier>{A0E1B2C3-0001-4000-8000-000000000005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sig">
+      <UniqueIdentifier>{A0E1B2C3-0001-4000-8000-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\report">
+      <UniqueIdentifier>{D6738979-FE07-4B4E-A897-53902528EA2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\diff">
+      <UniqueIdentifier>{1DE81602-662D-4617-A96F-095C8DB8FE98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\text">
+      <UniqueIdentifier>{C86B6190-4082-486C-A017-AB49704D4834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\match">
+      <UniqueIdentifier>{A23B5842-3EB8-4365-9FDC-23791B0FFD7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\func">
+      <UniqueIdentifier>{C1805327-029F-40A1-9446-EBECAA1969DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\disasm">
+      <UniqueIdentifier>{79C1AC80-2A5F-4E2A-A425-E99BA9F4FC58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{BC8FC971-1EBC-4486-A485-E26FA0BA3744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pe">
+      <UniqueIdentifier>{6A6354D7-4C6D-4554-A506-94D3D2640AC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{798EE625-B054-4B26-838E-E4C38B4300C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{A0E1B2C3-0001-4000-8000-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\zydis">
+      <UniqueIdentifier>{A0E1B2C3-0001-4000-8000-000000000002}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\config\settings.cpp">
+      <Filter>src\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\console\console.cpp">
+      <Filter>src\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ida\install.cpp">
+      <Filter>src\ida</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ida\process.cpp">
+      <Filter>src\ida</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ida\step.cpp">
+      <Filter>src\ida</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\diff\normalize_c.cpp">
+      <Filter>src\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ida\exchange.cpp">
+      <Filter>src\ida</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sig\scan.cpp">
+      <Filter>src\sig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\report\html.cpp">
+      <Filter>src\report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\report\markdown.cpp">
+      <Filter>src\report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\report\notes.cpp">
+      <Filter>src\report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\report\pair.cpp">
+      <Filter>src\report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\md5.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\diff\lines.cpp">
+      <Filter>src\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\text\render.cpp">
+      <Filter>src\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\match\match.cpp">
+      <Filter>src\match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\func\discover.cpp">
+      <Filter>src\func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\func\seeds.cpp">
+      <Filter>src\func</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\disasm\decode.cpp">
+      <Filter>src\disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pe\image.cpp">
+      <Filter>src\pe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\zydis\Zydis.c">
+      <Filter>external\zydis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\config\settings.hpp">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\console\console.hpp">
+      <Filter>src\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ida\install.hpp">
+      <Filter>src\ida</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ida\process.hpp">
+      <Filter>src\ida</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ida\step.hpp">
+      <Filter>src\ida</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\diff\normalize_c.hpp">
+      <Filter>src\diff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ida\exchange.hpp">
+      <Filter>src\ida</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sig\scan.hpp">
+      <Filter>src\sig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\wide.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\report\html.hpp">
+      <Filter>src\report</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\report\markdown.hpp">
+      <Filter>src\report</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\report\notes.hpp">
+      <Filter>src\report</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\report\pair.hpp">
+      <Filter>src\report</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\md5.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\diff\lines.hpp">
+      <Filter>src\diff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\text\render.hpp">
+      <Filter>src\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\match\match.hpp">
+      <Filter>src\match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\func\discover.hpp">
+      <Filter>src\func</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\func\seeds.hpp">
+      <Filter>src\func</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\disasm\decode.hpp">
+      <Filter>src\disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\hash.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pe\image.hpp">
+      <Filter>src\pe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\zydis\Zydis.h">
+      <Filter>external\zydis</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
